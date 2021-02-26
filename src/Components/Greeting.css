@@ -1,0 +1,20 @@
+body{
+    background-color: blue;
+}
+
+#App{
+    position: relative;
+}
+
+#greet{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: red;
+}
+
+.display{
+    display: none;
+}
