@@ -1,0 +1,7 @@
+#button{
+    display: grid;
+}
+
+button{
+    justify-self: center;
+}
