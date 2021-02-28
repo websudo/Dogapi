@@ -63,18 +63,21 @@ export class Home extends Component {
             if(item.match(breed) !== null){
                 let matcharr = item 
                 console.log(matcharr)
-                this.setState({match : matcharr})
+                this.setState({match : matcharr}, () => { 
+                    fetch(`https://dog.ceo/api/breed/${this.state.match}/images/random`)
+                    .then( res => res.json())
+                    .then( (data) => {
+                        console.log(data.message)
+                        console.log(this.state.match)
+                        let str = data.message[0].split('/')[4];
+                        this.setState({ img : data.message, breed : str})
+                    })
+                    console.log(this.state.match)})
             }
+
         })
         
-        fetch(`https://dog.ceo/api/breed/${this.state.match}/images/random`)
-        .then( res => res.json())
-        .then( (data) => {
-            console.log(data.message)
-            console.log(this.state.match)
-            let str = data.message[0].split('/')[4];
-            this.setState({ img : data.message, breed : str})
-        })
+        
     }
 
     render() {
