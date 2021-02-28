@@ -1,6 +1,7 @@
 import './App.css';
 import Greeting from './Components/Greeting'
 import Home from './Components/Home'
+import Logo from './Components/Logo'
 import {useState} from 'react'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
 
   return (
     <div className="App">
+      <Logo />
      <Greeting home = {homeswitch}/>
      {homedisp.display && <Home homedisp ={homedisp}/>}
     </div>

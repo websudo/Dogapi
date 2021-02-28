@@ -13,7 +13,8 @@ export class Home extends Component {
             img : "",
             breed : "",
             breedlist : [],
-            match : ""
+            match : "",
+            found : false
         }
     }
 
@@ -59,8 +60,37 @@ export class Home extends Component {
     onSubmit = (e) =>{
         e.preventDefault();
         let breed = document.querySelector("#breed-input").value
-        this.state.breedlist.map((item) =>{
-            if(item.match(breed) !== null){
+        this.setState({found : false}, ()=>{
+            
+            this.state.breedlist.map((item) =>{
+               
+                if(item.match(breed) !== null && this.state.found ===false ){
+                    let matcharr = item 
+                   
+                    this.setState({found : true} , () => {
+                        this.setState({match : matcharr}, () => { 
+                           
+                            fetch(`https://dog.ceo/api/breed/${this.state.match}/images/random`)
+                            .then( res => res.json())
+                            .then( (data) => {
+                                
+                                let str = data.message[0].split('/')[4];
+                                this.setState({ img : data.message, breed : str , found : true} )
+                                document.querySelector("#error").innerHTML = ""
+                            })
+                           
+                            })
+                    })
+                
+                }
+    
+            })
+            if(this.state.found === false){
+                document.querySelector("#error").innerHTML = "Result not found"
+            }
+        })
+        /*this.state.breedlist.map((item) =>{
+            if(item.match(breed) !== null && !this.state.found){
                 let matcharr = item 
                 console.log(matcharr)
                 this.setState({match : matcharr}, () => { 
@@ -70,12 +100,17 @@ export class Home extends Component {
                         console.log(data.message)
                         console.log(this.state.match)
                         let str = data.message[0].split('/')[4];
-                        this.setState({ img : data.message, breed : str})
+                        this.setState({ img : data.message, breed : str , found : true})
+                        document.querySelector("#error").innerHTML = ""
                     })
                     console.log(this.state.match)})
             }
 
-        })
+            if(this.state.found === false){
+                document.querySelector("#error").innerHTML = "Result not found"
+            }
+
+        })*/
         
         
     }
@@ -84,7 +119,7 @@ export class Home extends Component {
     
         return (
             <div id="home" className="home-none">
-                <Input onSubmit={this.onSubmit}/>
+                <Input onSubmit={this.onSubmit}/><p id="error"></p>
                 <h1>{this.state.breed}</h1>
                 {this.state.img && <Image img ={this.state.img}/>}
                 <Random onButtonClick = {this.onButtonClick}/>
