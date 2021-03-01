@@ -1,16 +1,52 @@
 .home{
-    
-    position: absolute;
+     
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    display: block;
     color: white;
-}
-#App{
-    position: relative;
+    border: black 5px solid;
 }
 
-
+.error-div{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border: black 5px solid;
+    text-align: center;
+    font-weight: bold;
+    color: red;
+    font-size: 20px;
+}
 .home-none{
     display: none;
+}
+
+.image-compo{
+    text-align: center;
+    display: block;
+    
+}
+
+h1{
+    border: black 5px solid;
+    
+}
+
+@media (max-width: 375px) and  (max-height :812px){
+
+    h1{
+        margin-top: 20px;
+        max-width: 300px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .error-div{
+        margin-top: 10px;
+    }
+    .home{
+        margin-top: 0px;
+        display: block;
+    }
+    
 }

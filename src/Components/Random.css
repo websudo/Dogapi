@@ -1,7 +1,14 @@
 #button{
     display: grid;
+    margin-top: 10px;
 }
 
 button{
     justify-self: center;
+}
+
+@media (max-width : 414px){
+    #button{
+        margin-bottom: 50px;
+    }
 }

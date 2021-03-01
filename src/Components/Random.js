@@ -5,7 +5,7 @@ export class Random extends Component {
     render() {
         return (
             <div id="button">
-                <button onClick={this.props.onButtonClick}>Random</button>
+                <button type="button" className="btn btn-dark" onClick={this.props.onButtonClick}>Random</button>
             </div>
         )
     }
