@@ -54,6 +54,7 @@ export class Home extends Component {
             console.log(data.message)
             let str = data.message[0].split('/')[4];
             this.setState({ img : data.message, breed : str})
+            document.querySelector("#error").innerHTML = ""
         })
         
     }

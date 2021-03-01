@@ -5,7 +5,7 @@ export class Logo extends Component {
     render() {
         return (
             <div className="Logo-container">
-                <img src="dogo3.png" ></img>
+                <img src="dogo5.png" ></img>
             </div>
         )
     }
