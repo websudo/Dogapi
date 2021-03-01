@@ -1,7 +1,7 @@
 .display-image{
     border: white 5px solid;
     border-radius: 5%;
-    border: black 5px solid;
+  
 }
 
 @media (max-width : 411px){
