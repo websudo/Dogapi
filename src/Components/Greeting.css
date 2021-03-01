@@ -36,3 +36,12 @@ body{
         background-position: 0% 50%;    
     }
 }
+
+@media (max-width : 411px){
+    #greet{
+        text-align: center;
+    }
+    #greet h1{
+        font-size: 30px;
+    }
+}

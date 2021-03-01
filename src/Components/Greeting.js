@@ -11,7 +11,7 @@ export const Greeting = ({home}) => {
     
     return (
         <div id = "greet"  onClick={handleClick} >
-            <h1 > CLICK HERE </h1>
+            <h1 >" CLICK HERE TO GET A SMILE "</h1>
         </div>
     )
 }
