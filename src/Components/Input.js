@@ -15,7 +15,7 @@ export class Input extends Component {
                 <form onSubmit={this.props.onSubmit}>
                     <div class="search-input" onSubmit={this.props.onSubmit}>
                         <a href="" target="_blank" hidden></a>
-                        <input type="text" id="breed-input" placeholder="Type to search.."></input>
+                        <input type="text" id="breed-input" placeholder="Type breed to search.."></input>
                         
                         <div class="icon" onClick={this.props.onSubmit} type="submit"><i class="fas fa-search"></i></div>
                     </div>
