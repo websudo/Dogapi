@@ -62,7 +62,7 @@ export class Home extends Component {
     onSubmit = (e) =>{
         e.preventDefault();
         let breed = document.querySelector("#breed-input").value.toLowerCase();
-       
+        if(breed !== ""){
         var flag = false;
         this.state.breedlist.map((item) =>{
                
@@ -88,6 +88,7 @@ export class Home extends Component {
             }
 
         })
+    }
         if(flag === false){
             document.querySelector("#error").innerHTML = "Result not found"
         }
