@@ -11,7 +11,7 @@ export const Greeting = ({home}) => {
     
     return (
         <div id = "greet"  onClick={handleClick} >
-            <img src="https://cdn1.bbcode0.com/uploads/2021/3/2/7963221ee3bd525dbbe73fdaf6dbbbff-full.png" border="0"/>
+            <img src="pug2.png" />
             <h1 >" PET ME "</h1>
         </div>
     )
