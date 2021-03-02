@@ -71,7 +71,7 @@ export class Home extends Component {
                 flag = true;
         
                     this.setState({match : matcharr}, () => { 
-                       
+                        console.log(this.state.match)
                         fetch(`https://dog.ceo/api/breed/${this.state.match}/images/random`)
                         .then( res => res.json())
                         .then( (data) => {
@@ -103,7 +103,7 @@ export class Home extends Component {
                     <p id="error"></p>
                 </div>
                 <div className="image-compo">
-                <h1>{this.state.breed}</h1>
+                <p>{this.state.breed || this.state.match}</p>
                 {this.state.img && <Image img ={this.state.img}/>}
                 <Random onButtonClick = {this.onButtonClick} />
                 </div>
