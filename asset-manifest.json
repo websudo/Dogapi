@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Dogapi/static/css/main.45af4090.chunk.css",
-    "main.js": "/Dogapi/static/js/main.5c156285.chunk.js",
-    "main.js.map": "/Dogapi/static/js/main.5c156285.chunk.js.map",
+    "main.js": "/Dogapi/static/js/main.3906ce59.chunk.js",
+    "main.js.map": "/Dogapi/static/js/main.3906ce59.chunk.js.map",
     "runtime-main.js": "/Dogapi/static/js/runtime-main.6ba25271.js",
     "runtime-main.js.map": "/Dogapi/static/js/runtime-main.6ba25271.js.map",
     "static/js/2.a327b05a.chunk.js": "/Dogapi/static/js/2.a327b05a.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.6ba25271.js",
     "static/js/2.a327b05a.chunk.js",
     "static/css/main.45af4090.chunk.css",
-    "static/js/main.5c156285.chunk.js"
+    "static/js/main.3906ce59.chunk.js"
   ]
 }
