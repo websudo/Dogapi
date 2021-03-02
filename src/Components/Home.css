@@ -44,6 +44,11 @@ p{
     .error-div{
         margin-top: 10px;
     }
+
+    .error-div p{
+        font-size: 20px;
+    }
+    
     .home{
         margin-top: 0px;
         display: block;
