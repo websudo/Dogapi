@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Dogapi/static/css/main.aac87ce4.chunk.css",
-    "main.js": "/Dogapi/static/js/main.927f9b57.chunk.js",
-    "main.js.map": "/Dogapi/static/js/main.927f9b57.chunk.js.map",
+    "main.css": "/Dogapi/static/css/main.45af4090.chunk.css",
+    "main.js": "/Dogapi/static/js/main.5c156285.chunk.js",
+    "main.js.map": "/Dogapi/static/js/main.5c156285.chunk.js.map",
     "runtime-main.js": "/Dogapi/static/js/runtime-main.6ba25271.js",
     "runtime-main.js.map": "/Dogapi/static/js/runtime-main.6ba25271.js.map",
     "static/js/2.a327b05a.chunk.js": "/Dogapi/static/js/2.a327b05a.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.cfee7d9e.chunk.js": "/Dogapi/static/js/3.cfee7d9e.chunk.js",
     "static/js/3.cfee7d9e.chunk.js.map": "/Dogapi/static/js/3.cfee7d9e.chunk.js.map",
     "index.html": "/Dogapi/index.html",
-    "static/css/main.aac87ce4.chunk.css.map": "/Dogapi/static/css/main.aac87ce4.chunk.css.map",
+    "static/css/main.45af4090.chunk.css.map": "/Dogapi/static/css/main.45af4090.chunk.css.map",
     "static/js/2.a327b05a.chunk.js.LICENSE.txt": "/Dogapi/static/js/2.a327b05a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.6ba25271.js",
     "static/js/2.a327b05a.chunk.js",
-    "static/css/main.aac87ce4.chunk.css",
-    "static/js/main.927f9b57.chunk.js"
+    "static/css/main.45af4090.chunk.css",
+    "static/js/main.5c156285.chunk.js"
   ]
 }
