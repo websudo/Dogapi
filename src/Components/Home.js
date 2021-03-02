@@ -61,7 +61,8 @@ export class Home extends Component {
 
     onSubmit = (e) =>{
         e.preventDefault();
-        let breed = document.querySelector("#breed-input").value;
+        let breed = document.querySelector("#breed-input").value.toLowerCase();
+       
         var flag = false;
         this.state.breedlist.map((item) =>{
                
@@ -78,50 +79,19 @@ export class Home extends Component {
                             let str = data.message[0].split('/')[4];
                             this.setState({ img : data.message, breed : str } )
                             document.querySelector("#error").innerHTML = ""
-                            console.log(flag)
+                           
                         })
-                        console.log(flag)
+                        
                         })
-                        console.log(flag)
+                        
             
-            }console.log(flag)
+            }
 
         })
         if(flag === false){
             document.querySelector("#error").innerHTML = "Result not found"
         }
-        /*this.setState({found : false}, ()=>{
-            
-            this.state.breedlist.map((item) =>{
-               
-                if(item.match(breed) !== null && this.state.found ===false ){
-                    let matcharr = item 
-                   
-                    this.setState({found : true} , () => {
-                        this.setState({match : matcharr}, () => { 
-                           
-                            fetch(`https://dog.ceo/api/breed/${this.state.match}/images/random`)
-                            .then( res => res.json())
-                            .then( (data) => {
-                                
-                                let str = data.message[0].split('/')[4];
-                                this.setState({ img : data.message, breed : str , found : true} )
-                                document.querySelector("#error").innerHTML = ""
-                            })
-                           
-                            })
-                    })
-                
-                }
-    
-            })
-            if(this.state.found === false){
-                document.querySelector("#error").innerHTML = "Result not found"
-            }
-
-            <Input onSubmit={this.onSubmit}/>
-        })*/
-        
+       
     }
 
     render() {

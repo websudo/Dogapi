@@ -8,21 +8,24 @@ body{
     font-family: "open sans";
 }
 
-#App{
-    position: relative;
-    
-}
+
 
 #greet{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
     color: white;
+    text-align: center;
 }
 
+#greet img{
+    height: 500px;
+    width: auto;
+    padding-bottom: 10px;
+}
 .display{
-    display: none;
+    display: none !important;
 }
 
 @keyframes gradient{
@@ -37,11 +40,36 @@ body{
     }
 }
 
-@media (max-width : 411px){
+@media (max-width : 414px){
     #greet{
         text-align: center;
+        margin-top: 100px;
     }
     #greet h1{
         font-size: 30px;
     }
+    
+    #greet img{
+        height: 200px;
+        width: auto;
+        padding-bottom: 10px;
+    }
+    
+}
+
+@media (max-width : 375px){
+    #greet{
+        text-align: center;
+        margin-top: 100px;
+    }
+    #greet h1{
+        font-size: 25px;
+    }
+
+    #greet img{
+        height: 200px;
+        width: auto;
+        padding-bottom: 10px;
+    }
+   
 }
