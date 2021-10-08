@@ -31,6 +31,7 @@ body {
 	height: 500px;
 	width: auto;
 	padding-bottom: 10px;
+	cursor: pointer;
 }
 
 #greet > h1 {
