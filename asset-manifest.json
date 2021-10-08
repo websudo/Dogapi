@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Dogapi/static/css/main.a5738f21.chunk.css",
-    "main.js": "/Dogapi/static/js/main.f07b7d0a.chunk.js",
-    "main.js.map": "/Dogapi/static/js/main.f07b7d0a.chunk.js.map",
+    "main.css": "/Dogapi/static/css/main.4c3659e1.chunk.css",
+    "main.js": "/Dogapi/static/js/main.664d98cd.chunk.js",
+    "main.js.map": "/Dogapi/static/js/main.664d98cd.chunk.js.map",
     "runtime-main.js": "/Dogapi/static/js/runtime-main.6ba25271.js",
     "runtime-main.js.map": "/Dogapi/static/js/runtime-main.6ba25271.js.map",
-    "static/js/2.a327b05a.chunk.js": "/Dogapi/static/js/2.a327b05a.chunk.js",
-    "static/js/2.a327b05a.chunk.js.map": "/Dogapi/static/js/2.a327b05a.chunk.js.map",
+    "static/js/2.5d59e893.chunk.js": "/Dogapi/static/js/2.5d59e893.chunk.js",
+    "static/js/2.5d59e893.chunk.js.map": "/Dogapi/static/js/2.5d59e893.chunk.js.map",
     "static/js/3.cfee7d9e.chunk.js": "/Dogapi/static/js/3.cfee7d9e.chunk.js",
     "static/js/3.cfee7d9e.chunk.js.map": "/Dogapi/static/js/3.cfee7d9e.chunk.js.map",
     "index.html": "/Dogapi/index.html",
-    "static/css/main.a5738f21.chunk.css.map": "/Dogapi/static/css/main.a5738f21.chunk.css.map",
-    "static/js/2.a327b05a.chunk.js.LICENSE.txt": "/Dogapi/static/js/2.a327b05a.chunk.js.LICENSE.txt"
+    "static/css/main.4c3659e1.chunk.css.map": "/Dogapi/static/css/main.4c3659e1.chunk.css.map",
+    "static/js/2.5d59e893.chunk.js.LICENSE.txt": "/Dogapi/static/js/2.5d59e893.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.6ba25271.js",
-    "static/js/2.a327b05a.chunk.js",
-    "static/css/main.a5738f21.chunk.css",
-    "static/js/main.f07b7d0a.chunk.js"
+    "static/js/2.5d59e893.chunk.js",
+    "static/css/main.4c3659e1.chunk.css",
+    "static/js/main.664d98cd.chunk.js"
   ]
 }
